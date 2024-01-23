@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "eBikes",
+			"path": "."
+		}
+	],
+	"settings": {
+		"jira-plugin.workingProject": ""
+	}
+}

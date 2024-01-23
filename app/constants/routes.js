@@ -1,0 +1,18 @@
+export const ROUTES = {
+  tab: 'TAB',
+  tabNav: 'TABNAVIGATOR',
+  authNav: 'AUTHNAVIGATOR',
+  homeNav: 'HOMENAV',
+  settingsNav: 'SETTINGSNAV',
+  historyNav: 'HISTORYNAV',
+  bookmarkNav: 'BOOKMARKNAV',
+  onboarding: 'ONBOARDING',
+  home: 'HOME',
+  order: 'ORDER',
+  bookmark: 'BOOKMARK',
+  yourOrders: 'YOURORDERS',
+  map: 'MAP',
+  settings: 'SETTINGS',
+  history: 'HISTORYNAV',
+  trackingDetails: 'TRACKINGDETAILS',
+};
