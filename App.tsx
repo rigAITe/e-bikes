@@ -1,17 +1,18 @@
 import * as React from "react";
-// Before rendering any navigation stack
-// import { enableFreeze } from "react-native-screens";
 import { enableLatestRenderer } from "react-native-maps";
 import { NavigationContainer } from "@react-navigation/native";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import RootNavigator from "./app/navigation/rootNavigator";
 function App(): JSX.Element {
-  // enableFreeze(true);
   enableLatestRenderer();
   return (
-    <NavigationContainer>
-      <RootNavigator />
-    </NavigationContainer>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <RootNavigator />
+      </NavigationContainer>
+    </GestureHandlerRootView>
+
   )
 }
 

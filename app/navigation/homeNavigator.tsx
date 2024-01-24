@@ -15,7 +15,7 @@ const HomeNavigator: React.FC = () => {
         header: () => <HomeHeader />, // Use HomeHeader as a custom header
       }}
     >
-      <Stack.Screen name={ROUTES.home as "HOME"} component={Home} />
+      <Stack.Screen name={ROUTES.homepage as "HOMEPAGE"} component={Home} />
       <Stack.Screen name={ROUTES.order as "ORDER"} component={Order} />
     </Stack.Navigator>
   );
