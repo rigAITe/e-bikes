@@ -68,6 +68,7 @@ const Text: React.FC<Props> = ({
     xs: {
       fontSize: FONTSIZE.font12,
       fontWeight: '400',
+      fontFamily: FONTFAMILY.regular
     },
   });
 

@@ -8,6 +8,7 @@ export const ROUTES = {
   bookmarkNav: 'BOOKMARKNAV',
   onboarding: 'ONBOARDING',
   home: 'HOME',
+  homepage: 'HOMEPAGE',
   order: 'ORDER',
   bookmark: 'BOOKMARK',
   yourOrders: 'YOURORDERS',

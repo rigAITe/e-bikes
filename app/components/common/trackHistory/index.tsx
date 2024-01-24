@@ -1,4 +1,4 @@
-import { Image, StyleSheet, View } from 'react-native'
+import { Image, StyleSheet, View, ViewStyle } from 'react-native'
 import React from 'react'
 import Text from '../Typography'
 import { icons, images } from '../../../constants'
@@ -9,13 +9,15 @@ interface Props {
   head: string;
   text: string;
   component?: JSX.Element;
+  style?: ViewStyle;
+  bg?: string
 }
 
-const TrackHistory: React.FC<Props> = ({image1, head, text, component}) => {
+const TrackHistory: React.FC<Props> = ({image1, head, text, component, style, bg = '#F1F6FB'}) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <View style={styles.firstContainer}>
-        <View style={styles.bg}>
+        <View style={{...styles.bg, backgroundColor: bg}}>
           <Image source={image1} style={{ width: 24, height: 24 }} />
         </View>
         <View>
@@ -36,5 +38,5 @@ const styles = StyleSheet.create({
   container: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: FONTSIZE.font24 },
   firstContainer: { flexDirection: 'row', alignItems: 'center', gap: FONTSIZE.font16 },
   direction: { width: FONTSIZE.font12, height: FONTSIZE.font12 },
-  bg: { backgroundColor: '#F1F6FB', padding: 16, borderRadius: 50 }
+  bg: { padding: 16, borderRadius: 50 }
 })

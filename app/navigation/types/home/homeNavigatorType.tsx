@@ -1,5 +1,5 @@
 
 export type HomeRootStackParamList = {
-  HOME: undefined;
+  HOMEPAGE: undefined;
   ORDER: undefined;
 };
